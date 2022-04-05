@@ -494,32 +494,32 @@ class Model(object):
 
 		''' P@N Evaluation '''
 
-		# P@1
-		one_100, one_200, one_300 = self.getPscore(sess, self.test_one, label='P@1 Evaluation')
-		self.logger.info('TEST_ONE: P@100: {}, P@200: {}, P@300: {}'.format(one_100, one_200, one_300))
-		one_avg = (one_100 + one_200 + one_300)/3
+		# # P@1
+		# one_100, one_200, one_300 = self.getPscore(sess, self.test_one, label='P@1 Evaluation')
+		# self.logger.info('TEST_ONE: P@100: {}, P@200: {}, P@300: {}'.format(one_100, one_200, one_300))
+		# one_avg = (one_100 + one_200 + one_300)/3
 
-		# P@2
-		two_100, two_200, two_300 = self.getPscore(sess, self.test_two, label='P@2 Evaluation')
-		self.logger.info('TEST_TWO: P@100: {}, P@200: {}, P@300: {}'.format(two_100, two_200, two_300))
-		two_avg = (two_100 + two_200 + two_300)/3
+		# # P@2
+		# two_100, two_200, two_300 = self.getPscore(sess, self.test_two, label='P@2 Evaluation')
+		# self.logger.info('TEST_TWO: P@100: {}, P@200: {}, P@300: {}'.format(two_100, two_200, two_300))
+		# two_avg = (two_100 + two_200 + two_300)/3
 
-		# P@All
-		all_100, all_200, all_300 = self.getPscore(sess, self.data['test'], label='P@All Evaluation')
-		self.logger.info('TEST_THREE: P@100: {}, P@200: {}, P@300: {}'.format(all_100, all_200, all_300))
-		all_avg = (all_100 + all_200 + all_300)/3
+		# # P@All
+		# all_100, all_200, all_300 = self.getPscore(sess, self.data['test'], label='P@All Evaluation')
+		# self.logger.info('TEST_THREE: P@100: {}, P@200: {}, P@300: {}'.format(all_100, all_200, all_300))
+		# all_avg = (all_100 + all_200 + all_300)/3
 
-		pprint ({
-				'one_100':  one_100,
-				'one_200':  one_200,
-				'one_300':  one_300,
-				'mean_one': one_avg,
-				'two_100':  two_100,
-				'two_200':  two_200,
-				'two_300':  two_300,
-				'mean_two': two_avg,
-				'all_100':  all_100,
-				'all_200':  all_200,
-				'all_300':  all_300,
-				'mean_all': all_avg,
-		})
+		# pprint ({
+		# 		'one_100':  one_100,
+		# 		'one_200':  one_200,
+		# 		'one_300':  one_300,
+		# 		'mean_one': one_avg,
+		# 		'two_100':  two_100,
+		# 		'two_200':  two_200,
+		# 		'two_300':  two_300,
+		# 		'mean_two': two_avg,
+		# 		'all_100':  all_100,
+		# 		'all_200':  all_200,
+		# 		'all_300':  all_300,
+		# 		'mean_all': all_avg,
+		# })
